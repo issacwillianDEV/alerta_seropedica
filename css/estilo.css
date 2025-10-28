@@ -2427,10 +2427,9 @@ body {
         gap: 6px;
         min-height: 44px;
         border-radius: 8px;
-        left: 15px;
-        right: 15px;
-        max-width: none;
         width: auto;
+        max-width: fit-content;
+        left: auto;
         justify-content: center;
     }
 
@@ -3041,4 +3040,78 @@ body {
     color: #856404;
     font-size: 0.95rem;
     margin: 0;
+}
+
+/* Destaque limpo para seção de assinatura */
+.secao-assinatura-destaque {
+    background: #F0F8F0;
+    padding: 80px 0;
+    position: relative;
+    border-top: 3px solid #E74C3C;
+    border-bottom: 3px solid #E74C3C;
+}
+
+.secao-assinatura-destaque::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(231, 76, 60, 0.05) 0%, transparent 100%);
+    z-index: 0;
+}
+
+.form-card-destaque {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    border: 2px solid #E74C3C;
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-card-destaque .form-header {
+    position: relative;
+}
+
+.form-card-destaque .form-header h2 {
+    color: #E74C3C;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-card-destaque .form-header p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Badge de destaque */
+.form-card-destaque .form-header::after {
+    content: '✍️ ASSINE AQUI';
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #E74C3C;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+    animation: badgeFloat 3s ease-in-out infinite;
+    white-space: nowrap;
+}
+
+@keyframes badgeFloat {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-5px);
+    }
 }

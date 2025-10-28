@@ -897,7 +897,7 @@ function inicializarBotaoFlutuante() {
             const isInFormSection = formRect.top <= window.innerHeight && formRect.bottom >= 0;
 
             if (isInFormSection) {
-                floatingBtn.style.opacity = '0.5';
+                floatingBtn.style.opacity = '0';
                 floatingBtn.style.transform = 'translateY(10px)';
                 floatingBtn.style.pointerEvents = 'none';
             } else {
