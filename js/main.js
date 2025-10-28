@@ -378,7 +378,7 @@ function mostrarErroCampo(campo, mensagem) {
     const errorDiv = document.createElement('div');
     errorDiv.className = 'error-message';
     errorDiv.textContent = mensagem;
-    errorDiv.style.color = '#e74c3c';
+    errorDiv.style.color = '#22c55e';
     errorDiv.style.fontSize = '0.85rem';
     errorDiv.style.marginTop = '0.3rem';
 
@@ -624,7 +624,7 @@ function mostrarNotificacao(mensagem, tipo = 'info') {
         position: fixed;
         top: 20px;
         right: 20px;
-        background: ${tipo === 'error' ? '#e74c3c' : tipo === 'warning' ? '#f39c12' : '#3498db'};
+        background: ${tipo === 'error' ? '#22c55e' : tipo === 'warning' ? '#f39c12' : '#3498db'};
         color: white;
         padding: 15px 20px;
         border-radius: 8px;
@@ -667,7 +667,7 @@ const additionalStyles = `
     .form-group input.error,
     .form-group select.error,
     .form-group textarea.error {
-        border-color: #e74c3c;
+        border-color: #22c55e;
         background-color: #fdf2f2;
     }
 
@@ -812,11 +812,11 @@ function inicializarCountdown() {
         } else {
             if (mobileCountdown) {
                 mobileCountdown.textContent = 'Encerrado';
-                mobileCountdown.style.color = '#E74C3C';
+                mobileCountdown.style.color = '#22C55E';
             }
             if (desktopCountdown) {
                 desktopCountdown.textContent = 'Encerrado';
-                desktopCountdown.style.color = '#E74C3C';
+                desktopCountdown.style.color = '#22C55E';
             }
         }
     }
@@ -873,7 +873,7 @@ function inicializarBotaoFlutuante() {
             const formCard = formSection.querySelector('.form-card');
             if (formCard) {
                 formCard.style.transition = 'all 0.3s ease';
-                formCard.style.boxShadow = '0 0 40px rgba(231, 76, 60, 0.4)';
+                formCard.style.boxShadow = '0 0 40px rgba(34, 197, 94, 0.4)';
                 formCard.style.transform = 'scale(1.02)';
 
                 // Remover destaque após 2 segundos

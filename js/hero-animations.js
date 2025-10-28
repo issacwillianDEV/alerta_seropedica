@@ -70,7 +70,7 @@ class CommunityNetworkAnimation {
                 vy: (Math.random() - 0.5) * 0.8,
                 radius: 1 + Math.random() * 3,
                 opacity: 0.2 + Math.random() * 0.6,
-                hue: Math.random() * 30, // Vermelhos e laranjas
+                hue: 120 + Math.random() * 30, // Verdes
                 pulseSpeed: 0.01 + Math.random() * 0.02
             });
         }
@@ -178,9 +178,9 @@ class CommunityNetworkAnimation {
                 fromNode.x, fromNode.y,
                 toNode.x, toNode.y
             );
-            gradient.addColorStop(0, `rgba(239, 68, 68, ${connection.strength * 0.2})`);
-            gradient.addColorStop(0.5, `rgba(239, 68, 68, ${connection.strength * 0.4})`);
-            gradient.addColorStop(1, `rgba(239, 68, 68, ${connection.strength * 0.2})`);
+            gradient.addColorStop(0, `rgba(34, 197, 94, ${connection.strength * 0.2})`);
+            gradient.addColorStop(0.5, `rgba(34, 197, 94, ${connection.strength * 0.4})`);
+            gradient.addColorStop(1, `rgba(34, 197, 94, ${connection.strength * 0.2})`);
 
             this.ctx.strokeStyle = gradient;
             this.ctx.lineWidth = connection.strength * 2;
@@ -224,8 +224,8 @@ class CommunityNetworkAnimation {
                 node.x, node.y, 0,
                 node.x, node.y, radius * 3
             );
-            glowGradient.addColorStop(0, `rgba(239, 68, 68, ${0.4 * node.brightness})`);
-            glowGradient.addColorStop(1, 'rgba(239, 68, 68, 0)');
+            glowGradient.addColorStop(0, `rgba(34, 197, 94, ${0.4 * node.brightness})`);
+            glowGradient.addColorStop(1, 'rgba(34, 197, 94, 0)');
 
             this.ctx.fillStyle = glowGradient;
             this.ctx.beginPath();
@@ -233,13 +233,13 @@ class CommunityNetworkAnimation {
             this.ctx.fill();
 
             // Nó principal
-            this.ctx.fillStyle = `rgba(220, 38, 38, ${node.brightness})`;
+            this.ctx.fillStyle = `rgba(22, 163, 74, ${node.brightness})`;
             this.ctx.beginPath();
             this.ctx.arc(node.x, node.y, radius, 0, Math.PI * 2);
             this.ctx.fill();
 
             // Centro do nó
-            this.ctx.fillStyle = `rgba(254, 242, 242, ${node.brightness})`;
+            this.ctx.fillStyle = `rgba(240, 253, 244, ${node.brightness})`;
             this.ctx.beginPath();
             this.ctx.arc(node.x, node.y, radius * 0.4, 0, Math.PI * 2);
             this.ctx.fill();

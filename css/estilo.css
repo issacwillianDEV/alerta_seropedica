@@ -24,7 +24,7 @@ body {
     position: relative;
     min-height: 100vh;
     background:
-        linear-gradient(135deg, #7f1d1d 0%, #dc2626 40%, #991b1b 100%);
+        linear-gradient(135deg, #14532d 0%, #16a34a 40%, #15803d 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,9 +51,9 @@ body {
     right: 0;
     bottom: 0;
     background:
-        radial-gradient(ellipse at top left, rgba(239, 68, 68, 0.08) 0%, transparent 50%),
-        radial-gradient(ellipse at bottom right, rgba(220, 38, 38, 0.06) 0%, transparent 40%),
-        radial-gradient(circle at 30% 70%, rgba(185, 28, 28, 0.04) 0%, transparent 60%);
+        radial-gradient(ellipse at top left, rgba(34, 197, 94, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at bottom right, rgba(22, 163, 74, 0.06) 0%, transparent 40%),
+        radial-gradient(circle at 30% 70%, rgba(21, 128, 61, 0.04) 0%, transparent 60%);
     z-index: 2;
     pointer-events: none;
 }
@@ -88,7 +88,7 @@ body {
     transform: translateX(-50%);
     width: 80px;
     height: 3px;
-    background: linear-gradient(90deg, transparent, rgba(239, 68, 68, 0.6), transparent);
+    background: linear-gradient(90deg, transparent, rgba(34, 197, 94, 0.6), transparent);
     border-radius: 2px;
 }
 
@@ -144,7 +144,7 @@ body {
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, rgba(239, 68, 68, 0.8), rgba(220, 38, 38, 0.8));
+    background: linear-gradient(90deg, rgba(34, 197, 94, 0.8), rgba(22, 163, 74, 0.8));
     opacity: 0.8;
 }
 
@@ -155,7 +155,7 @@ body {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(239, 68, 68, 0.03) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(34, 197, 94, 0.03) 0%, transparent 70%);
     opacity: 0;
     transition: opacity 0.4s ease;
 }
@@ -164,9 +164,9 @@ body {
     transform: translateY(-8px) scale(1.02);
     box-shadow:
         0 30px 70px rgba(0,0,0,0.35),
-        0 0 0 1px rgba(239, 68, 68, 0.2) inset,
-        0 0 60px rgba(239, 68, 68, 0.15) inset;
-    border-color: rgba(239, 68, 68, 0.3);
+        0 0 0 1px rgba(34, 197, 94, 0.2) inset,
+        0 0 60px rgba(34, 197, 94, 0.15) inset;
+    border-color: rgba(34, 197, 94, 0.3);
 }
 
 .stat-card-hero:hover::after {
@@ -181,12 +181,12 @@ body {
     color: #FFFFFF;
     margin-bottom: 0.8rem;
     position: relative;
-    text-shadow: 0 2px 15px rgba(0,0,0,0.5), 0 0 20px rgba(239, 68, 68, 0.2);
+    text-shadow: 0 2px 15px rgba(0,0,0,0.5), 0 0 20px rgba(34, 197, 94, 0.2);
 }
 
 .stat-number[data-meta] {
     color: #FEE2E2;
-    text-shadow: 0 2px 15px rgba(0,0,0,0.6), 0 0 25px rgba(239, 68, 68, 0.4);
+    text-shadow: 0 2px 15px rgba(0,0,0,0.6), 0 0 25px rgba(34, 197, 94, 0.4);
 }
 
 .stat-label {
@@ -220,7 +220,7 @@ body {
     transform: translate(-50%, -50%);
     width: 0;
     height: 0;
-    background: radial-gradient(circle, rgba(239, 68, 68, 0.4) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(34, 197, 94, 0.4) 0%, transparent 70%);
     transition: all 0.6s ease;
     border-radius: 50%;
 }
@@ -388,7 +388,7 @@ body {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background: linear-gradient(90deg, #E74C3C, #F39C12);
+    background: linear-gradient(90deg, #22C55E, #84CC16);
     border-radius: 2px;
 }
 
@@ -409,14 +409,14 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 4px solid transparent;
     background: linear-gradient(white, white) padding-box,
-                linear-gradient(135deg, #E74C3C, #F39C12) border-box;
+                linear-gradient(135deg, #22C55E, #84CC16) border-box;
     margin: 0 auto;
     display: block;
 }
 
 .campaign-banner:hover {
     transform: scale(1.02);
-    box-shadow: 0 30px 80px rgba(231, 76, 60, 0.2);
+    box-shadow: 0 30px 80px rgba(34, 197, 94, 0.2);
 }
 
 .content-text {
@@ -436,7 +436,7 @@ body {
     left: 0;
     width: 5px;
     height: 100%;
-    background: linear-gradient(180deg, #E74C3C, #F39C12);
+    background: linear-gradient(180deg, #22C55E, #84CC16);
 }
 
 .content-text p {
@@ -479,8 +479,8 @@ body {
     height: 5px;
     background: repeating-linear-gradient(
         90deg,
-        #E74C3C,
-        #E74C3C 20px,
+        #22C55E,
+        #22C55E 20px,
         #F39C12 20px,
         #F39C12 40px
     );
@@ -497,7 +497,7 @@ body {
     overflow: hidden;
     border: 2px solid transparent;
     background: linear-gradient(white, white) padding-box,
-                linear-gradient(135deg, rgba(231,76,60,0.1), rgba(243,156,18,0.1)) border-box;
+                linear-gradient(135deg, rgba(34,197,94,0.1), rgba(243,156,18,0.1)) border-box;
 }
 
 .form-card::before {
@@ -507,7 +507,7 @@ body {
     right: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(231,76,60,0.05) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(34,197,94,0.05) 0%, transparent 70%);
     animation: pulse 4s ease-in-out infinite;
 }
 
@@ -581,8 +581,8 @@ body {
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #E74C3C;
-    box-shadow: 0 0 0 4px rgba(231, 76, 60, 0.1);
+    border-color: #22C55E;
+    box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.1);
     transform: translateY(-2px);
 }
 
@@ -601,7 +601,7 @@ body {
 }
 
 .btn-submit {
-    background: linear-gradient(135deg, #E74C3C 0%, #F39C12 100%);
+    background: linear-gradient(135deg, #22C55E 0%, #84CC16 100%);
     color: white;
     border: none;
     padding: 18px 50px;
@@ -617,12 +617,12 @@ body {
     z-index: 2;
     text-transform: uppercase;
     letter-spacing: 1px;
-    box-shadow: 0 10px 30px rgba(231, 76, 60, 0.3);
+    box-shadow: 0 10px 30px rgba(34, 197, 94, 0.3);
 }
 
 .btn-submit:hover {
     transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 15px 40px rgba(231, 76, 60, 0.4);
+    box-shadow: 0 15px 40px rgba(34, 197, 94, 0.4);
 }
 
 /* Assinaturas recentes - Design Modernizado */
@@ -639,7 +639,7 @@ body {
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, #E74C3C, #F39C12, #E74C3C);
+    background: linear-gradient(90deg, #22C55E, #84CC16, #22C55E);
 }
 
 .assinaturas-recentes h2 {
@@ -674,7 +674,7 @@ body {
     border-radius: 20px;
     border-left: 5px solid transparent;
     background: linear-gradient(white, white) padding-box,
-                linear-gradient(180deg, #E74C3C, #F39C12) border-box;
+                linear-gradient(180deg, #22C55E, #84CC16) border-box;
     transition: all 0.4s ease;
     position: relative;
     overflow: hidden;
@@ -688,13 +688,13 @@ body {
     right: 0;
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, rgba(231,76,60,0.1), rgba(243,156,18,0.1));
+    background: linear-gradient(135deg, rgba(34,197,94,0.1), rgba(243,156,18,0.1));
     border-radius: 0 20px 0 60px;
 }
 
 .assinatura-card:hover {
     transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 20px 50px rgba(231, 76, 60, 0.15);
+    box-shadow: 0 20px 50px rgba(34, 197, 94, 0.15);
 }
 
 .assinatura-nome {
@@ -739,8 +739,8 @@ body {
 
 .btn-secundary {
     background: transparent;
-    color: #E74C3C;
-    border: 2px solid #E74C3C;
+    color: #22C55E;
+    border: 2px solid #22C55E;
     padding: 12px 30px;
     font-size: 1rem;
     font-weight: 600;
@@ -750,16 +750,16 @@ body {
 }
 
 .btn-secundary:hover {
-    background: #E74C3C;
+    background: #22C55E;
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+    box-shadow: 0 5px 15px rgba(34, 197, 94, 0.3);
 }
 
 /* Contato e compartilhamento - Tema Alerta */
 .contato {
     padding: 80px 0;
-    background: linear-gradient(135deg, #E74C3C 0%, #2C3E50 100%);
+    background: linear-gradient(135deg, #22C55E 0%, #2C3E50 100%);
     color: white;
     text-align: center;
     position: relative;
@@ -844,7 +844,7 @@ body {
     padding: 40px 0;
     text-align: center;
     position: relative;
-    border-top: 3px solid #E74C3C;
+    border-top: 3px solid #22C55E;
 }
 
 .footer::before {
@@ -854,7 +854,7 @@ body {
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, #E74C3C, #F39C12, #E74C3C);
+    background: linear-gradient(90deg, #22C55E, #84CC16, #22C55E);
 }
 
 .footer p {
@@ -924,7 +924,7 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #E74C3C 0%, #F39C12 100%);
+    background: linear-gradient(135deg, #22C55E 0%, #84CC16 100%);
     color: white;
     border: none;
     padding: 12px 30px;
@@ -937,7 +937,7 @@ body {
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 20px rgba(231, 76, 60, 0.3);
+    box-shadow: 0 5px 20px rgba(34, 197, 94, 0.3);
 }
 
 /* Animações Novas - Design Sofisticado */
@@ -1090,7 +1090,7 @@ body {
     .hero-banner {
         min-height: 90vh;
         background:
-            linear-gradient(135deg, #7f1d1d 0%, #dc2626 40%, #991b1b 100%);
+            linear-gradient(135deg, #14532d 0%, #16a34a 40%, #15803d 100%);
     }
 
     .banner-content {
@@ -1348,8 +1348,8 @@ body {
 .form-group input.error,
 .form-group select.error,
 .form-group textarea.error {
-    border-color: #E74C3C !important;
-    background-color: rgba(231, 76, 60, 0.05) !important;
+    border-color: #22C55E !important;
+    background-color: rgba(34, 197, 94, 0.05) !important;
     animation: alertShake 0.5s ease !important;
 }
 
@@ -1375,7 +1375,7 @@ body {
 
 /* Estilos de notificação melhorados */
 .notification.error {
-    background: linear-gradient(135deg, #E74C3C, #C0392B) !important;
+    background: linear-gradient(135deg, #22C55E, #16A34A) !important;
 }
 
 .notification.warning {
@@ -1475,7 +1475,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: conic-gradient(from 0deg, #E74C3C, #F39C12, #E74C3C);
+    background: conic-gradient(from 0deg, #22C55E, #84CC16, #22C55E);
     border-radius: 50%;
     z-index: -1;
     animation: rotateGradient 10s linear infinite;
@@ -1523,7 +1523,7 @@ body {
 .stat-progress {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #E74C3C;
+    color: #22C55E;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -1553,7 +1553,7 @@ body {
     left: -3px;
     right: -3px;
     bottom: -3px;
-    background: linear-gradient(45deg, #F39C12, #E74C3C);
+    background: linear-gradient(45deg, #84CC16, #22C55E);
     border-radius: 50%;
     z-index: -1;
     opacity: 0.8;
@@ -1685,7 +1685,7 @@ body {
 
 .progress-fill-advanced {
     height: 100%;
-    background: linear-gradient(90deg, #E74C3C, #F39C12);
+    background: linear-gradient(90deg, #22C55E, #84CC16);
     border-radius: 20px;
     transition: width 2s ease;
     position: relative;
@@ -1803,7 +1803,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(231,76,60,0.1), rgba(243,156,18,0.1));
+    background: linear-gradient(135deg, rgba(34,197,94,0.1), rgba(243,156,18,0.1));
     opacity: 0;
     transition: opacity 0.4s ease;
 }
@@ -2098,7 +2098,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(231,76,60,0.1), rgba(243,156,18,0.1));
+    background: linear-gradient(135deg, rgba(34,197,94,0.1), rgba(243,156,18,0.1));
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -2132,7 +2132,7 @@ body {
 }
 
 .stat-percentage {
-    color: #E74C3C;
+    color: #22C55E;
 }
 
 .stat-label {
@@ -2179,7 +2179,7 @@ body {
 
 .progress-fill {
     height: 100%;
-    background: linear-gradient(90deg, #E74C3C, #F39C12);
+    background: linear-gradient(90deg, #22C55E, #84CC16);
     border-radius: 12px;
     transition: width 1.5s ease;
     position: relative;
@@ -2354,7 +2354,7 @@ body {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background: #E74C3C;
+    background: #22C55E;
     color: white;
     border: none;
     border-radius: 12px;
@@ -2364,7 +2364,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
     transition: all 0.2s ease;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
@@ -2376,7 +2376,7 @@ body {
 
 .floating-assinatura-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+    box-shadow: 0 6px 20px rgba(34, 197, 94, 0.4);
     background: #c0392b;
 }
 
@@ -2480,7 +2480,7 @@ body {
 }
 
 .banner-modal-close:hover {
-    background: rgba(231, 76, 60, 0.8);
+    background: rgba(34, 197, 94, 0.8);
     transform: scale(1.1);
 }
 
@@ -2663,15 +2663,15 @@ body {
 }
 
 .step-indicator.active .step-number {
-    background: #E74C3C;
+    background: #22C55E;
     color: white;
-    border-color: #E74C3C;
+    border-color: #22C55E;
     transform: scale(1.1);
-    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
 }
 
 .step-indicator.active .step-label {
-    color: #E74C3C;
+    color: #22C55E;
     font-weight: 600;
 }
 
@@ -2744,8 +2744,8 @@ body {
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-    border-color: #E74C3C;
-    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+    border-color: #22C55E;
+    box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.1);
     outline: none;
 }
 
@@ -2908,7 +2908,7 @@ body {
     .review-value {
         text-align: left;
         padding-left: 1rem;
-        border-left: 3px solid #E74C3C;
+        border-left: 3px solid #22C55E;
     }
 
     .form-header h2 {
@@ -2976,7 +2976,7 @@ body {
 
 /* Melhorias de acessibilidade */
 .step-indicator:focus-within {
-    outline: 2px solid #E74C3C;
+    outline: 2px solid #22C55E;
     outline-offset: 2px;
     border-radius: 50%;
 }
@@ -3010,13 +3010,13 @@ body {
     height: 18px;
     margin: 0;
     cursor: pointer;
-    accent-color: #E74C3C;
+    accent-color: #22C55E;
     border: 2px solid #E0E0E0;
     border-radius: 4px;
 }
 
 .checkbox-label:hover input[type="checkbox"] {
-    border-color: #E74C3C;
+    border-color: #22C55E;
 }
 
 /* Dicas de preenchimento */
@@ -3047,8 +3047,8 @@ body {
     background: #F0F8F0;
     padding: 80px 0;
     position: relative;
-    border-top: 3px solid #E74C3C;
-    border-bottom: 3px solid #E74C3C;
+    border-top: 3px solid #22C55E;
+    border-bottom: 3px solid #22C55E;
 }
 
 .secao-assinatura-destaque::before {
@@ -3058,7 +3058,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, rgba(231, 76, 60, 0.05) 0%, transparent 100%);
+    background: linear-gradient(45deg, rgba(34, 197, 94, 0.05) 0%, transparent 100%);
     z-index: 0;
 }
 
@@ -3067,7 +3067,7 @@ body {
     border-radius: 20px;
     padding: 40px;
     box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-    border: 2px solid #E74C3C;
+    border: 2px solid #22C55E;
     position: relative;
     z-index: 1;
     max-width: 800px;
@@ -3079,7 +3079,7 @@ body {
 }
 
 .form-card-destaque .form-header h2 {
-    color: #E74C3C;
+    color: #22C55E;
     font-size: 2.2rem;
     margin-bottom: 0.5rem;
 }
@@ -3096,13 +3096,13 @@ body {
     top: -50px;
     left: 50%;
     transform: translateX(-50%);
-    background: #E74C3C;
+    background: #22C55E;
     color: white;
     padding: 8px 24px;
     border-radius: 20px;
     font-weight: 600;
     font-size: 0.9rem;
-    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
     animation: badgeFloat 3s ease-in-out infinite;
     white-space: nowrap;
 }
